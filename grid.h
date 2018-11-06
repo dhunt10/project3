@@ -1,4 +1,4 @@
-// Project 3a written by Darin Hunt & Ojasvi DSilva
+// Project 3b written by Darin Hunt & Ojasvi DSilva
 // This is a Header file for Project 3. 
 // It creates Grid and builds the function of the class
 
@@ -80,12 +80,12 @@ grid::grid(int file)
 void grid::readLetters()
 {
 	
-	charMat.resize(column,row);
+	charMat.resize(column,row);// Resize matrix based on inputed numbers
  	for (int i=0; i<column; i++)
  	{
  		for (int j=0; j<row; j++)
  		{
- 			fin >> charMat[i][j];
+ 			fin >> charMat[i][j]; // takes in matrix
  			
 		 }
 	 }
@@ -97,7 +97,7 @@ void grid::readLetters()
 	{
 		for (int l=0; l< charMat.cols(); l++)
 		{
-			cout << charMat[k][l] << "  ";
+			cout << charMat[k][l] << "  "; // prints matrix
 		}
 		cout << endl;
 	}
